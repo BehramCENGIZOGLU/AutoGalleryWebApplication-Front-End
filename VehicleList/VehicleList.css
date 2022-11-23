@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #1ABC9B;
+}
+
+small{
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#containerNav{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* Navbar */
+
+nav{
+    width: 100%;
+    position: absolute;
+    background-color: #2C3E4F;
+    color: whitesmoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#logo-box{
+    float: left;
+    padding-top: 0.5rem;
+}
+
+#logo-box .logo{
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+#nav-links{
+    float: right;
+}
+
+#nav-links .nav-item{
+    float: left;
+    margin: 0.5rem;
+}
+
+#nav-links .nav-link{
+    color: whitesmoke;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+    transition: color 1s;
+}
+
+#nav-links .nav-link:hover{
+    color: #1ABC9B;
+}
+
+#containerVehicles{
+    margin-top: 3rem;
+    position: static;
+}
+
+#containerVehicles .card-header {
+    background-color:#203A43 ;
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.card-body input{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-body button{
+    font-weight: 700;
+    border-radius: 25px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    transition: color 1s;
+}
+
+.card-body button:hover{
+    background-color: whitesmoke;
+    color: green;
+}
+
+#containerVehicles .card-body {
+    background-color:#203A43 ;
+}
+
+#vehicles-title{
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+thead{
+    font-size: 2rem;
+    color: whitesmoke;
+}
+tbody{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+#vehicles a{
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: color 1s;
+}
+
+#vehicles a:hover{
+    color: red;
+    background-color: whitesmoke;
+}
+
+#clear-vehicles{
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: color 1s;
+}
+
+#clear-vehicles:hover{
+    color: red;
+    background-color: whitesmoke;
+}
+
+hr{
+    opacity: 1;
+    border-top: 3px solid white;
+    border-radius: 10px;
+
+}
+
+#containerHeader{
+    width: 100%;
+    height: 700px;
+    background-image: url(../vehicleBackground.jpg);
+    padding-top: calc(106px + 3rem);
+}
+
+.headerText{
+    font-weight: 700;
+    font-size: 4.5rem;
+    text-align: center;
+    color: #203A43;
+}
+
+/*.card{
+    background: whitesmoke;
+} */
+
+/* Footer */
+
+ footer{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #2C3E4F;
+    color: whitesmoke;
+    text-align: center;
+ }
+
+ footer h4{
+    font-size: 2.4rem;
+    font-weight: 700;
+ }
+
+ footer p{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+footer li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+
+.btn{
+    margin-top: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    border: 2px solid whitesmoke;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn-social{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.btn-outline{
+    color: whitesmoke;
+    border-color: whitesmoke;
+    background-color: transparent;
+}
+
+.btn-outline:hover{
+    color: #2C3E4F;
+    background-color: whitesmoke;
+}
+
+.copyright{
+    background-color: #19262F;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+@media screen and (max-width:600px){
+    html{
+        font-size: 5px;
+    }
+
+    #containerHeader{
+        background-image: url(../vehicleBackground.jpg);
+    }
+
+    .card-body{
+        font-size: 5px;
+    }
+}
+
+@media screen and (min-width:800px){
+    html{
+        font-size: 9px;
+    }
+    
+    .card-body{
+        font-size: 9px;
+    }
+
+    #containerHeader{
+        background-image: url(../vehicleBackground.jpg);
+    }
+}
+
+@media screen and(min-width:1200px) {
+    html{
+        font-size: 12px;
+    }
+
+    #containerHeader{
+        background-image: url(../vehicleBackground.jpg);
+    }
+
+    .card-body{
+        font-size: 12px;
+    }
+}

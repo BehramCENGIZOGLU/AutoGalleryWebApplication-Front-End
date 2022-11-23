@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+small{
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#containerNav{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* Navbar */
+
+nav{
+    width: 100%;
+    position: sticky;
+    background-color: #2C3E4F;
+    color: whitesmoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#logo-box{
+    float: left;
+    padding-top: 0.5rem;
+}
+
+#logo-box .logo{
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+#nav-links{
+    float: right;
+}
+
+#nav-links .nav-item{
+    float: left;
+    margin: 0.5rem;
+}
+
+#nav-links .nav-link{
+    color: whitesmoke;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+    transition: color 1s;
+}
+
+#nav-links .nav-link:hover{
+    color: #1ABC9B;
+}
+
+/* Contact */
+
+#contact{
+    background: linear-gradient(whitesmoke, white);
+}
+
+#contact h2{
+    padding-top: 3rem;
+    font-size: 4.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2C3E4F;
+}
+
+#contact-form{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group{
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.form-group input, textarea{
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.form-group input, textarea:focus{
+    outline: 0;
+}
+
+#contact-form button{
+    background-color: #1ABC9B;
+    border-radius: 15%;
+    border: none;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom:  4rem;
+}
+
+@media screen and (max-width:600px){
+    html{
+        font-size: 5px;
+    }
+}
+
+@media screen and (min-width:800px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and(min-width:1200px) {
+    html{
+        font-size: 12px;
+    }
+}

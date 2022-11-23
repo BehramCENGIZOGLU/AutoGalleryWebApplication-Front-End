@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    font-size: 7px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background: linear-gradient(#79A7A8, #B7D7D8);
+}
+
+small{
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#containerNav{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* Navbar */
+
+nav{
+    width: 100%;
+    position: sticky;
+    background-color: #2C3E4F;
+    color: whitesmoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#logo-box{
+    float: left;
+    padding-top: 0.5rem;
+}
+
+#logo-box .logo{
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 2.8rem;
+    width: 100%;
+}
+
+#nav-links{
+    float: right;
+}
+
+#nav-links .nav-item{
+    float: left;
+    margin: 0.5rem;
+}
+
+#nav-links .nav-link{
+    color: whitesmoke;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+    transition: color 1s;
+    width: 100%;
+}
+
+#nav-links .nav-link:hover{
+    color: #1ABC9B;
+}
+
+/* #containerHeader{
+    width: 100%;
+    height: 700px;
+    background-image: url(../vehicleBackground.jpg);
+    padding-top: calc(106px + 3rem);
+}
+
+.headerText{
+    font-weight: 700;
+    font-size: 4.5rem;
+    text-align: center;
+    color: #203A43;
+} */
+
+.col{
+    margin-top: 1.5rem;
+    width: 50%;
+    float: left;
+}
+
+
+footer{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #2C3E4F;
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+ }
+
+ footer h4{
+    font-size: 2.4rem;
+    font-weight: 700;
+ }
+
+ footer p{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+footer li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+
+.btn{
+    margin-top: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    border: 2px solid whitesmoke;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn-social{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.btn-outline{
+    color: whitesmoke;
+    border-color: whitesmoke;
+    background-color: transparent;
+}
+
+.btn-outline:hover{
+    color: #2C3E4F;
+    background-color: whitesmoke;
+}
+
+.copyright{
+    background-color: #19262F;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+}
+
+.containerAboutUs{
+    width: 900px;
+    margin:auto;
+}
+
+.aboutUsbg{
+    float:right;
+    width: 25rem;
+    padding:0 10px 10px 0;
+    padding-top: 9rem;
+    padding-left: 8rem;
+}
+
+/*.aboutUs{
+    font-size: 15px;
+    font-weight: 700;
+    width: 70%;
+    
+} */
+
+.aboutUs h2{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+    color: whitesmoke;
+}
+
+.containerAboutUs hr{
+    border: none;
+    border-bottom: .5rem solid whitesmoke;
+    border-radius: 30%;
+    color: whitesmoke;
+    opacity: 1;
+}
+
+.aboutUs p{
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* responsive */
+
+@media screen and (max-width:600px){
+    html{
+        font-size: 5px;
+    }
+
+    .aboutUs img{
+        width: 15%;
+        padding-top: 12rem;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width:800px){
+    html{
+        font-size: 9px;
+    }
+
+    .aboutUs img{
+        width: 25%;
+        padding-top: 12rem;
+        display: inline-block;
+    }
+}
+
+@media screen and(min-width:1200px) {
+    html{
+        font-size: 12px;
+    }
+
+    .aboutUs img{
+        width: 30rem;
+        padding-top: 7rem;
+        display: inline-block;
+    }
+
+}
